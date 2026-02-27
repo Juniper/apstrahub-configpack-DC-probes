@@ -1,7 +1,9 @@
 ---
 manifest_version: 1
-description: This is an example pack which includes a single configlet.
+description: This pack creates probes for DC BER and FEC interface counters telemetry.
 supported_apstra_versions:
-  - 5.0.0
-  - 5.0.1
-  - 5.1.0
+  - 6.1.0
+  - 6.1.1
+tags:
+  type: Configuration
+  purpose: Analytics
