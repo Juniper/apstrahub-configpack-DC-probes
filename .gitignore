@@ -1,0 +1,6 @@
+.idea
+public_key.txt
+secret_key.txt
+pack/tofu/.terraform*
+pack/tofu/credentials.tf
+pack/tofu/terraform.tfstate*
