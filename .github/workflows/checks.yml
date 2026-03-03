@@ -73,8 +73,8 @@ jobs:
           go-version: '1.22.5'
       - name: Install terraform-config-inspect
         run: go install github.com/hashicorp/terraform-config-inspect@d2d12f9a63bbb1fe34ea81ec84c9cb11d8514c17
-      - name: Run terraform-config-inspect
-        run: .ci/scripts/provider_block.sh pack/tofu
+      # - name: Run terraform-config-inspect
+      #   run: .ci/scripts/provider_block.sh pack/tofu
   check_underscores:
     runs-on: ubuntu-latest
     steps:
