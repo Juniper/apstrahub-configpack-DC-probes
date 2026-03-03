@@ -10,3 +10,6 @@ terraform {
     }
   }
 }
+provider "apstra" {
+  experimental = true
+}
