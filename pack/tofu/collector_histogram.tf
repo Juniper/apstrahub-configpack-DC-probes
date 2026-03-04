@@ -9,7 +9,7 @@ resource "apstra_raw_json" "histogram_collector" {
 
   # The endpoint for creating/updating collectors
   url = "/api/telemetry/collectors"
-
+  id = "histogram_${var.blueprint_id}"
   payload = <<-EOT
   {
     "service_name": "histogram_${var.blueprint_id}",

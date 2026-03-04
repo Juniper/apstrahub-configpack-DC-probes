@@ -4,6 +4,7 @@
 
 resource "apstra_raw_json" "histogram_service" {
   url     = "/api/telemetry-service-registry"
+  id     = "histogram_${var.blueprint_id}"
   payload = <<-EOT
   {
     "description": "Histogram service registry",

@@ -4,6 +4,7 @@
 
 resource "apstra_raw_json" "ber_service" {
   url     = "/api/telemetry-service-registry"
+  id      = "ber_${var.blueprint_id}"
   payload = <<-EOT
   {
     "description": "BER service registry",
