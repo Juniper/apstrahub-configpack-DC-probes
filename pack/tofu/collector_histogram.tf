@@ -4,7 +4,7 @@
 
 resource "apstra_raw_json" "histogram_collector" {
   depends_on = [
-    apstra_raw_json.histogram_service
+    time_sleep.wait_for_histogram_cleanup
   ]
 
   # The endpoint for creating/updating collectors
@@ -47,4 +47,9 @@ resource "apstra_raw_json" "histogram_collector" {
     ]
   }
   EOT
+}
+
+resource "time_sleep" "wait_for_histogram_cleanup" {
+  depends_on       = [apstra_raw_json.histogram_service]
+  destroy_duration = "30s"
 }
