@@ -8,9 +8,5 @@ terraform {
       source = "Juniper/apstra"
       version = "~> 0.99.0"
     }
-    time = {
-      source  = "hashicorp/time"
-      version = "~> 0.9"
-    }
   }
 }

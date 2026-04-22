@@ -4,7 +4,7 @@
 
 resource "apstra_raw_json" "histogram_collector" {
   depends_on = [
-    time_sleep.wait_for_histogram_cleanup
+    terraform_data.wait_for_histogram_cleanup
   ]
 
   # The endpoint for creating/updating collectors
@@ -49,7 +49,11 @@ resource "apstra_raw_json" "histogram_collector" {
   EOT
 }
 
-resource "time_sleep" "wait_for_histogram_cleanup" {
-  depends_on       = [apstra_raw_json.histogram_service]
-  destroy_duration = "30s"
+resource "terraform_data" "wait_for_histogram_cleanup" {
+  depends_on = [apstra_raw_json.histogram_service]
+
+  provisioner "local-exec" {
+    when    = destroy
+    command = "echo 'Waiting 30s for histogram telemetry cleanup on devices...' && sleep 30"
+  }
 }
