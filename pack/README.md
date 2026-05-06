@@ -2,11 +2,11 @@
 
 ## What does this Config Pack Do
 
-This config pack creates the IBA elements required to collect BER (Bit Error Rate), FEC (Forward Error Correction), and interface counter telemetry from Junos EVO devices.
+This config pack creates the IBA elements required to collect CPU, Memory, BER (Bit Error Rate), FEC (Forward Error Correction), and interface counter telemetry from Junos devices.
 
-## JunOS Compatibility
+## BER and FEC JunOS Compatibility
 
-This Config Pack targets `junos_evo` on `qfx-ms-fixed` family devices.
+This BER and FEC elements target only `junos_evo` on `qfx-ms-fixed` family devices.
 
 ## Components
 
