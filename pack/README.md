@@ -17,3 +17,4 @@ This Config Pack targets `junos_evo` on `qfx-ms-fixed` family devices.
 | Custom Collector | ber_collector | Collects BER, CRC errors, and packet/byte counters via `show interfaces extensive` |
 | Custom Collector | histogram_collector | Collects FEC histogram bin data via `show interfaces extensive` |
 | Probe | dc-ber-intf-counters | Probe that consumes both collectors and exposes BER and histogram stages |
+| Probe | dc-cpu-memory-stream | Probe that Streams CPU and memory utilisation to DC Assurance  |
