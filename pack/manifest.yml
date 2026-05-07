@@ -4,6 +4,7 @@ description: This pack creates probes for DC BER and FEC interface counters tele
 supported_apstra_versions:
   - 6.1.0
   - 6.1.1
+  - 6.1.2
 tags:
   type: Configuration
   purpose: Analytics
