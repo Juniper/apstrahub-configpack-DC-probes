@@ -1,6 +1,6 @@
 ---
 manifest_version: 1
-description: This pack creates probes for DC BER and FEC interface counters telemetry.
+description: This pack creates probes for CPU, Memory, BER and FEC interface counters telemetry.
 supported_apstra_versions:
   - 6.1.0
   - 6.1.1
