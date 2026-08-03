@@ -29,3 +29,4 @@ It also creates elements to monitor the following on the same devices:
 | Probe | dc-cpu-memory-stream | Probe that Streams CPU and memory utilisation to DC Assurance |
 | Probe | dc-bfd-sessions | Probe that consumes the BFD collector and exposes BFD session state |
 | Probe | dc-evpn-host-flapping | Probe that monitors EVPN MAC flapping (local vs VTEP) on EOS/Junos leafs and raises a sustained-flapping anomaly per leaf |
+| Probe | Optical Transceivers Probe | Probe that collects DOM metrics for optical interfaces and lanes |

@@ -21,10 +21,11 @@ resource "apstra_raw_json" "dc-evpn-host-flapping" {
             "1": "flapping"
           }
         },
-        "graph_query": "node(\"device_profile\", selector=_or(has_items({\"os\": \"EOS\"}), has_items({\"os\": \"Junos\"}))).in_(\"device_profile\").node('system', name='system', deploy_mode='deploy', system_id=not_none(), tag=has_all(['layer_leaf']))",
+        "graph_query": "node(\"device_profile\", selector=_or(has_items({\"os\": \"EOS\"}), has_items({\"os\": \"Junos\"}))).in_(\"device_profile\").node(\"system\", name=\"system\", deploy_mode=\"deploy\", system_id=not_none(), tag=has_all([\"layer_leaf\"]))",
         "service_input": "''",
         "query_group_by": [],
         "keys": [],
+        "collection_type": "\"any\"",
         "ingestion_filter": {},
         "data_type": "dynamic",
         "query_tag_filter": {
