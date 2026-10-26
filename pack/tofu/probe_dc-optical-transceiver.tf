@@ -17,7 +17,7 @@ resource "apstra_raw_json" "dc-optical-transceiver-probe" {
           "execution_count": "-1",
           "service_name": "optical_xcvr",
           "query_expansion": {},
-          "service_interval": "600",
+          "service_interval": "120",
           "enable_streaming": true,
           "device_profile": "str(device_profile.label)",
           "system_id": "str(system.system_id)",
