@@ -6,6 +6,7 @@ This config pack creates the IBA elements required to collect the following tele
 
 - CPU
 - Memory
+- Optical Transceiver DOM metrics
 - BER (Bit Error Rate)
 - FEC (Forward Error Correction)
 - Interface counters
